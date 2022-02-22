@@ -20,25 +20,19 @@ function ellenorzes() {
 	//Harmadik
 	let hpont = 0;
 	const harmadik = [
-	document.getElementById("5"),
-	document.getElementById("6"),
-	document.getElementById("7"),
-	document.getElementById("8")]
-
-	if (harmadik[0].checked) {
-		hpont++;
-	}
-
-	if (harmadik[1].checked) {
-		hpont--;
-	}
-
-	if (harmadik[2].checked) {
-		hpont++;
-	}
-
-	if (harmadik[3].checked) {
-		hpont--;
+	[document.getElementById("5"), true],
+	[document.getElementById("6"), false],
+	[document.getElementById("7"), true],
+	[document.getElementById("8"), false]];
+	
+	for (let i = 0; i < harmadik.length; i++) {
+		if (harmadik[i][0].checked) {
+			if (harmadik[i][1]) {
+				hpont++;
+			} else {
+				hpont--;
+			}
+		}
 	}
 
 	if (hpont < 0) {
