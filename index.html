@@ -16,15 +16,24 @@
 			<div class="my-2">
 				<span>1. Melyik hegységünknek a legmagasabb pontja a <b>Csóványos</b>?</span>
 
-				<div>
-					<input type="radio" id="1" name="elso" value="0">
-					<label for="1">Badacsony</label><br>
-					<input type="radio" id="2" name="elso" value="1">
-					<label for="2">Bakony</label><br>
-					<input type="radio" id="3" name="elso" value="0">
-					<label for="3">Börzsöny</label><br>
-					<input type="radio" id="4" name="elso" value="0">
-					<label for="4">Bükk</label><br>
+				<div class="custom-control custom-radio">
+					<input type="radio" id="1" name="elso" class="custom-control-input">
+					<label class="custom-control-label" for="1">Első</label>
+				</div>
+
+				<div class="custom-control custom-radio">
+					<input type="radio" id="2" name="elso" class="custom-control-input">
+					<label class="custom-control-label" for="2">Második</label>
+				</div>
+
+				<div class="custom-control custom-radio">
+					<input type="radio" id="3" name="elso" class="custom-control-input">
+					<label class="custom-control-label" for="3">Harmadik</label>
+				</div>
+
+				<div class="custom-control custom-radio">
+					<input type="radio" id="4" name="elso" class="custom-control-input">
+					<label class="custom-control-label" for="4">Negyedik</label>
 				</div>
 			</div>
 
@@ -33,7 +42,7 @@
 				<span>2. Melyik asd?</span>
 
 				<div>
-					<select id="masodik" multiple="multiple">
+					<select id="masodik" class="form-control" multiple="multiple">
 						<option value="0">1</option>
 						<option value="1">2</option>
 						<option value="0">3</option>
@@ -46,12 +55,22 @@
 				<span>3. Melyik asd?</span>
 
 				<div>
-					<input type="checkbox" id="5" value="0">
-					<label for="5">1</label><br>
-					<input type="checkbox" id="6" value="1">
-					<label for="6">2</label><br>
-					<input type="checkbox" id="7" value="1">
-					<label for="7">3</label>
+					<div class="form-check">
+						<input class="form-check-input" type="checkbox" id="5">
+						<label class="form-check-label" for="5">Első</label>
+					</div>
+					<div class="form-check">
+						<input class="form-check-input" type="checkbox" id="6">
+						<label class="form-check-label" for="6">Második</label>
+					</div>
+					<div class="form-check">
+						<input class="form-check-input" type="checkbox" id="7">
+						<label class="form-check-label" for="7">Harmadik</label>
+					</div>
+					<div class="form-check">
+						<input class="form-check-input" type="checkbox" id="8">
+						<label class="form-check-label" for="8">Negyeddik</label>
+					</div>
 				</div>
 			</div>
 
@@ -60,16 +79,16 @@
 				<span>4. Melyik asd?</span>
 
 				<div>
-					<input typpe="text" id="negyedik">
+					<input typpe="text" class="form-control" id="negyedik">
 				</div>
 			</div>
 
 			<!--Ötödik-->
 			<div class="my-2">
-				<span>5. Mennyi 5+6?</span>
+				<span>5. Mennyi <b>5+6</b>?</span>
 
 				<div>
-					<input type="number" id="otodik" value="11">
+					<input type="number" class="form-control" id="otodik" value="11">
 				</div>
 			</div>
 
