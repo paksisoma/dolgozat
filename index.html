@@ -4,79 +4,84 @@
 		<meta charset="UTF-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>Hegységek és hegycsúcsok teszt</title>
+		<title>Kvíz kérdések</title>
 		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
 	</head>
 
 	<body>
-		<div class="container">
-			<h1>Hegységek és hegycsúcsok teszt</h1>
+		<div class="container my-5">
+			<h1>Kvíz kérdések</h1>
 
 			<!--Első-->
-			<div class="my-2">
-				<span>1. Melyik hegységünknek a legmagasabb pontja a <b>Csóványos</b>?</span>
+			<div class="my-4">
+				<span>1. Melyik országban élnek a legtöbben?</span>
 
 				<div class="custom-control custom-radio">
 					<input type="radio" id="1" name="elso" class="custom-control-input">
-					<label class="custom-control-label" for="1">Első</label>
+					<label class="custom-control-label" for="1">India</label>
 				</div>
 
 				<div class="custom-control custom-radio">
 					<input type="radio" id="2" name="elso" class="custom-control-input">
-					<label class="custom-control-label" for="2">Második</label>
+					<label class="custom-control-label" for="2">Kína</label>
 				</div>
 
 				<div class="custom-control custom-radio">
 					<input type="radio" id="3" name="elso" class="custom-control-input">
-					<label class="custom-control-label" for="3">Harmadik</label>
+					<label class="custom-control-label" for="3">USA</label>
 				</div>
 
 				<div class="custom-control custom-radio">
 					<input type="radio" id="4" name="elso" class="custom-control-input">
-					<label class="custom-control-label" for="4">Negyedik</label>
+					<label class="custom-control-label" for="4">Indonézia</label>
 				</div>
 			</div>
 
 			<!--Második-->
-			<div class="my-2">
-				<span>2. Melyik asd?</span>
+			<div class="my-4">
+				<span>2. Mi a világ leghosszabb folyója?</span>
 
 				<div>
 					<select id="masodik" class="form-control" multiple="multiple">
-						<option value="0">1</option>
-						<option value="1">2</option>
-						<option value="0">3</option>
+						<option value="0">Nílus</option>
+						<option value="0">Jangce</option>
+						<option value="0">Ob</option>
+						<option value="1">Amazonas</option>
+						<option value="0">Jenyiszej</option>
+						<option value="0">Léna</option>
 					</select>
 				</div>
 			</div>
 
 			<!--Harmadik-->
-			<div class="my-2">
-				<span>3. Melyik asd?</span>
+			<div class="my-4">
+				<span>3. A felsorolt szavak közül melyik kék színű?</span>
+				<br>
+				<small>Több válasz is lehetséges!</small>
 
 				<div>
 					<div class="form-check">
 						<input class="form-check-input" type="checkbox" id="5">
-						<label class="form-check-label" for="5">Első</label>
+						<label class="form-check-label" for="5">Víz</label>
 					</div>
 					<div class="form-check">
 						<input class="form-check-input" type="checkbox" id="6">
-						<label class="form-check-label" for="6">Második</label>
+						<label class="form-check-label" for="6">Fű</label>
 					</div>
 					<div class="form-check">
 						<input class="form-check-input" type="checkbox" id="7">
-						<label class="form-check-label" for="7">Harmadik</label>
+						<label class="form-check-label" for="7">Ég</label>
 					</div>
 					<div class="form-check">
 						<input class="form-check-input" type="checkbox" id="8">
-						<label class="form-check-label" for="8">Negyeddik</label>
+						<label class="form-check-label" for="8">Nap</label>
 					</div>
 				</div>
 			</div>
 
 			<!--Negyedik-->
-			<div class="my-2">
-				<span>4. Melyik asd?</span>
+			<div class="my-4">
+				<span>4. Milyen színű a krokodil?</span>
 
 				<div>
 					<input typpe="text" class="form-control" id="negyedik">
@@ -84,17 +89,18 @@
 			</div>
 
 			<!--Ötödik-->
-			<div class="my-2">
+			<div class="my-4">
 				<span>5. Mennyi <b>5+6</b>?</span>
 
 				<div>
-					<input type="number" class="form-control" id="otodik" value="11">
+					<input type="number" class="form-control" id="otodik">
 				</div>
 			</div>
 
 			<hr>
 
 			<button type="button" class="btn btn-primary">Ellenőrzés</button>
+			<span id="eredmeny"></span>
 		</div>
 	</body>
 </html>
