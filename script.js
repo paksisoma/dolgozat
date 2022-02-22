@@ -47,5 +47,17 @@ function ellenorzes() {
 
 	pont += hpont;
 
+	//Negyedik
+	const negyedik = document.getElementById("negyedik");
+	if (negyedik.value.trim().toLowerCase() === "zöld") {
+		pont++;
+	}
+
+	//Ötödik
+	const otodik = document.getElementById("otodik");
+	if (parseInt(otodik.value) === 11) {
+		pont++;
+	}
+
 	eredmeny.innerHTML = "Eredmény: " + pont;
 }
