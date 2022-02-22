@@ -1,3 +1,5 @@
+const osszespontszam = 6;
+
 function ellenorzes() {
 	let pont = 0;
 
@@ -24,7 +26,7 @@ function ellenorzes() {
 	[document.getElementById("6"), false],
 	[document.getElementById("7"), true],
 	[document.getElementById("8"), false]];
-	
+
 	for (let i = 0; i < harmadik.length; i++) {
 		if (harmadik[i][0].checked) {
 			if (harmadik[i][1]) {
@@ -53,5 +55,22 @@ function ellenorzes() {
 		pont++;
 	}
 
-	eredmeny.innerHTML = "Eredmény: " + pont;
+	const szazalek = Math.floor(pont * (100/osszespontszam));
+	let erdem = "";
+
+	if (szazalek < 50) {
+		erdem = "Elégtelen";
+	} else if (szazalek < 65) {
+		erdem = "Elégséges";
+	} else if (szazalek < 75) {
+		erdem = "Közepes";
+	} else if (szazalek < 80) {
+		erdem = "Jó";
+	} else {
+		erdem = "Jeles";
+	}
+	
+	eredmeny.innerHTML = "Pontszám: <b>" + pont + " pont</b><br>"
+	+ "Százalék: <b>" + szazalek + "%</b><br>"
+	+ "Eredmény: <b>" + erdem + "</b>";
 }
